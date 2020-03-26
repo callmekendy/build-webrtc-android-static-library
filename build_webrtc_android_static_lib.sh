@@ -61,6 +61,7 @@ mkdir -p out/lib/arm64-v8a
 
 cp out/intermediate/arm64/tmp/lib${lib_name}.a out/lib/arm64-v8a
 
+rm -rf out/intermediate
 
 # copy the header files
 echo "copying the header files..."
