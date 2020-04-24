@@ -13,4 +13,4 @@ sh build_webrtc_android_static_lib.sh audio_processing
 ```
 
 ### Use the libs
-It will generate the libs and header files under the 'out' directory.
+It will generate the libs and the header files under the 'out' directory.

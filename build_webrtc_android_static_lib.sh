@@ -64,6 +64,10 @@ cp out/intermediate/arm64/tmp/lib${lib_name}.a out/lib/arm64-v8a
 rm -rf out/intermediate
 
 # copy the header files
-echo "copying the header files..."
 mkdir -p out/include
-find . -name "*.h" -type f -exec cp --parents {} ./out/include \;
+headers=`find . -name '*.h'`
+for header in $headers
+do
+  echo "copy header path: ${header}"
+  cp --parents ${header} out/include
+done
